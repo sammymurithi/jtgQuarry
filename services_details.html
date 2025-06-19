@@ -1,0 +1,605 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Construction HTML-5 Template</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="manifest" href="site.webmanifest">
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+		<!-- CSS here -->
+            <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+            <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+            <link rel="stylesheet" href="assets/css/gijgo.css">
+            <link rel="stylesheet" href="assets/css/slicknav.css">
+            <link rel="stylesheet" href="assets/css/animate.min.css">
+            <link rel="stylesheet" href="assets/css/magnific-popup.css">
+            <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+            <link rel="stylesheet" href="assets/css/themify-icons.css">
+            <link rel="stylesheet" href="assets/css/slick.css">
+            <link rel="stylesheet" href="assets/css/nice-select.css">
+            <link rel="stylesheet" href="assets/css/style.css">
+            <link rel="stylesheet" href="assets/css/responsive.css">
+                <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+            padding: 50px 0;
+        }
+
+        .footer-main {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f1419 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .footer-main::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="1" fill="%23ffffff" opacity="0.03"/><circle cx="60" cy="40" r="1.5" fill="%23ffffff" opacity="0.02"/><circle cx="80" cy="70" r="1" fill="%23ffffff" opacity="0.03"/><circle cx="30" cy="80" r="1" fill="%23ffffff" opacity="0.02"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>') repeat;
+            pointer-events: none;
+        }
+
+        .footer-area {
+            padding: 80px 0 40px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+        }
+
+        .col-lg-4, .col-lg-3, .col-lg-5, .col-xl-12 {
+            padding: 0 15px;
+        }
+
+        .col-lg-4 { flex: 0 0 33.333333%; max-width: 33.333333%; }
+        .col-lg-3 { flex: 0 0 25%; max-width: 25%; }
+        .col-lg-5 { flex: 0 0 41.666667%; max-width: 41.666667%; }
+        .col-xl-12 { flex: 0 0 100%; max-width: 100%; }
+
+        .single-footer-caption {
+            margin-bottom: 50px;
+        }
+
+        .footer-logo {
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .logo-container:hover {
+            transform: translateY(-2px);
+        }
+
+        .logo-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logo-icon::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+            transform: rotate(45deg);
+            transition: transform 0.6s ease;
+        }
+
+        .logo-container:hover .logo-icon::before {
+            transform: rotate(45deg) translate(100%, 100%);
+        }
+
+        .logo-icon i {
+            font-size: 28px;
+            color: white;
+            z-index: 2;
+        }
+
+        .logo-text {
+            color: white;
+        }
+
+        .logo-text h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 2px;
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .logo-text span {
+            font-size: 14px;
+            color: #a0a0a0;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+
+        .footer-pera p {
+            color: #b0b0b0;
+            line-height: 1.8;
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+
+        .footer-tittle h4 {
+            color: white;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-tittle h4::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            border-radius: 2px;
+        }
+
+        .footer-tittle ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .footer-tittle ul li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-tittle ul li a {
+            color: #b0b0b0;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-tittle ul li a:hover {
+            color: #ff6b35;
+            transform: translateX(5px);
+        }
+
+        .footer-tittle ul li a i {
+            margin-right: 10px;
+            font-size: 16px;
+            width: 20px;
+            color: #ff6b35;
+        }
+
+        .map-footer {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+            position: relative;
+            background: #1a1a2e;
+            border: 2px solid rgba(255, 107, 53, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .map-footer:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            border-color: rgba(255, 107, 53, 0.4);
+        }
+
+        .map-footer iframe {
+            width: 100%;
+            height: 280px;
+            border: none;
+            filter: grayscale(20%) contrast(1.1);
+            transition: filter 0.3s ease;
+        }
+
+        .map-footer:hover iframe {
+            filter: grayscale(0%) contrast(1.2);
+        }
+
+        .footer-copy-right {
+            text-align: center;
+            padding: 30px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 40px;
+        }
+
+        .footer-copy-right p {
+            color: #a0a0a0;
+            font-size: 14px;
+            margin: 0;
+            background: linear-gradient(135deg, #a0a0a0, #c0c0c0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            padding: 10px 0;
+        }
+
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .contact-icon i {
+            color: white;
+            font-size: 16px;
+        }
+
+        .contact-info {
+            flex: 1;
+        }
+
+        .contact-info p {
+            margin: 0;
+            color: #b0b0b0;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 992px) {
+            .col-lg-4, .col-lg-3, .col-lg-5 {
+                flex: 0 0 100%;
+                max-width: 100%;
+                margin-bottom: 40px;
+            }
+            
+            .footer-area {
+                padding: 60px 0 30px;
+            }
+            
+            .logo-text h2 {
+                font-size: 24px;
+            }
+            
+            .map-footer iframe {
+                height: 250px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .logo-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo-icon {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+            
+            .footer-area {
+                padding: 40px 0 20px;
+            }
+            
+            .container {
+                padding: 0 15px;
+            }
+        }
+    </style>
+   </head>
+
+   <body>
+    <!-- Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="assets/img/logo/loder-logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+       <div class="header-area header-transparent">
+            <div class="main-header ">
+                <div class="header-top d-none d-lg-block">
+                   <div class="container-fluid">
+                       <div class="col-xl-12">
+                            <div class="row d-flex justify-content-between align-items-center">
+                                <div class="header-info-left">
+                                    <ul>     
+                                        <li>+254 712 031947</li>
+                                        <li>quarry@jtg.co.ke</li>
+                                        <li>OPEN - Mon - Sat 6:00 - 18:00, Sunday - CLOSED</li>
+                                    </ul>
+                                </div>
+                                <div class="header-info-right">
+                                    <ul class="header-social">    
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                       <li> <a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                       </div>
+                   </div>
+                </div>
+               <div class="header-bottom  header-sticky">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2 col-md-1">
+                                <div class="logo">
+                                    <!-- logo-1 -->
+                                    <a href="index.html" class="big-logo"><img src="assets/img/logo/jtg-logo.png" alt="JTG Aggregates Quarry" style="max-height: 40px; width: auto;"></a>
+                                    <!-- logo-2 -->
+                                    <a href="index.html" class="small-logo"><img src="assets/img/logo/loder-logo.png" alt="JTG Quarry"></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-lg-8 col-md-8">
+                                <!-- Main-menu -->
+                                <div class="main-menu f-right d-none d-lg-block">
+                                    <nav> 
+                                        <ul id="navigation">                                                                                                                   
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="project.html">Projects</a></li>
+                                            <li><a href="services.html">Products</a></li>
+                                            <li><a href="offer.html">Special Offer</a></li>
+                                            <li><a href="blog.html">News</a></li>
+                                            <li><a href="#">Pages</a>
+                                                <ul class="submenu">
+                                                    <li><a href="#vision">Vision</a></li>
+                                                    <li><a href="#mission">Mission</a></li>
+                                                    <li><a href="#sustainability">Sustainability</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>             
+                            <div class="col-xl-2 col-lg-2 col-md-3">
+                                <div class="header-right-btn f-right d-none d-lg-block">
+                                    <a href="contact.html" class="btn">Get Quote</a>
+                                </div>
+                            </div>
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+       </div>
+        <!-- Header End -->
+    </header>
+    <main>
+        <!-- slider Area Start-->
+        <div class="slider-area ">
+            <div class="single-slider hero-overly slider-height2 d-flex align-items-center" data-background="assets/img/jtg/img6.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 col-xl-8">
+                            <div class="hero-cap hero-cap2 pt-120">
+                                <h2>Engineering techniques & implementation</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- slider Area End-->
+        <!-- Services Details Start -->
+        <div class="services-details-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="single-services section-padding2">
+                            <div class="details-img mb-40">
+                                <img src="assets/img/gallery/services_details.png" alt="">
+                            </div>
+                            <div class="details-caption">
+                                <p>Mollit anim laborum.Dvcuis aute iruxvfg dhjkolohr in re voluptate velit esscillumlore eu quife nrulla parihatur. Excghcepteur sfwsignjnt occa cupidatat non aute iruxvfg dhjinulpadeserunt mollitemnth incididbnt ut;o5tu layjobore mofllit anim.Mollit anim laborum.Dvcuis aute iruxvfg.</p>
+
+                                <p class="mb-50">Mollit anim laborum.Dvcuis aute iruxvfg dhjkolohr in re voluptate velit esscillumlore eu quife nrulla parihatur. Excghcepteur sfwsignjnt occa cupidatat non aute iruxvfg dhjinulpadeserunt mollitemnth incididbnt ut;o5tu layjobore mofllit anim.Mollit anim laborum.Dvcuis aute iruxvfg.</p>
+
+                                <h3>How can we help?</h3>
+                                <p>Mollit anim laborum.Dvcuis aute iruxvfg dhjkolohr in re voluptate velit esscillumlore eu quife nrulla parihatur. Excghcepteur sfwsignjnt occa cupidatat non aute iruxvfg dhjinulpadeserunt mollitemnth incididbnt ut;o5tu layjobore mofllit anim.Mollit anim laborum.Dvcuis aute iruxvfg.</p>
+                                
+                                <p>Mollit anim laborum.Dvcuis aute iruxvfg dhjkolohr in re voluptate velit esscillumlore eu quife nrulla parihatur. Excghcepteur sfwsignjnt occa cupidatat non aute iruxvfg dhjinulpadeserunt mollitemnth incididbnt ut;o5tu layjobore mofllit anim.Mollit anim laborum.Dvcuis aute iruxvfg.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services Details End -->
+    </main>
+    <footer>
+        <div class="footer-main">
+            <div class="footer-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="single-footer-caption">
+                                <div class="footer-logo">
+                                    <a href="index.html" class="logo-container">
+                                        <div class="logo-icon">
+                                            <i class="fas fa-mountain"></i>
+                                        </div>
+                                        <div class="logo-text">
+                                            <h2>JTG Aggregates</h2>
+                                            <span>PREMIUM QUARRY MATERIALS</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="footer-tittle">
+                                    <div class="footer-pera">
+                                        <p>JTG Aggregates Quarry is Thika's leading supplier of high-quality construction materials. We provide reliable supply, competitive pricing, and fast delivery of ballast, sand, gravel, and other construction aggregates.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-3">
+                            <div class="single-footer-caption">
+                                <div class="footer-tittle">
+                                    <h4>Contact Info</h4>
+                                    
+                                    <div class="contact-item">
+                                        <div class="contact-icon">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </div>
+                                        <div class="contact-info">
+                                            <p>Thika Quarry, Off Thika-Garissa Road, Thika, Kenya</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="contact-item">
+                                        <div class="contact-icon">
+                                            <i class="fas fa-phone"></i>
+                                        </div>
+                                        <div class="contact-info">
+                                            <p><a href="tel:+254712345678" style="color: #b0b0b0; text-decoration: none;">+254 712 345 678</a></p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="contact-item">
+                                        <div class="contact-icon">
+                                            <i class="fas fa-envelope"></i>
+                                        </div>
+                                        <div class="contact-info">
+                                            <p><a href="mailto:quarry@jtg.co.ke" style="color: #b0b0b0; text-decoration: none;">quarry@jtg.co.ke</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-5">
+                            <div class="single-footer-caption">
+                                <div class="footer-tittle">
+                                    <h4>Find Our Location</h4>
+                                </div>
+                                <div class="map-footer">
+                                    <iframe 
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.126472371838!2d37.241572!3d-1.0670203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f57e1b592add7%3A0xe126fbf71e486064!2sJTG%20Quarry!5e0!3m2!1sen!2ske!4v1750229434859!5m2!1sen!2ske" 
+                                        allowfullscreen="" 
+                                        loading="lazy" 
+                                        referrerpolicy="no-referrer-when-downgrade">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="footer-copy-right">
+                                <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> JTG Aggregates Quarry. All rights reserved | Quality Construction Materials in Thika, Kenya</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+   
+	<!-- JS here -->
+	
+		<!-- All JS Custom Plugins Link Here here -->
+        <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+		<!-- Jquery, Popper, Bootstrap -->
+		<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="./assets/js/popper.min.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+	    <!-- Jquery Mobile Menu -->
+        <script src="./assets/js/jquery.slicknav.min.js"></script>
+
+		<!-- Jquery Slick , Owl-Carousel Plugins -->
+        <script src="./assets/js/owl.carousel.min.js"></script>
+        <script src="./assets/js/slick.min.js"></script>
+        <!-- Date Picker -->
+        <script src="./assets/js/gijgo.min.js"></script>
+		<!-- One Page, Animated-HeadLin -->
+        <script src="./assets/js/wow.min.js"></script>
+		<script src="./assets/js/animated.headline.js"></script>
+        <script src="./assets/js/jquery.magnific-popup.js"></script>
+
+		<!-- Scrollup, nice-select, sticky -->
+        <script src="./assets/js/jquery.scrollUp.min.js"></script>
+        <script src="./assets/js/jquery.nice-select.min.js"></script>
+		<script src="./assets/js/jquery.sticky.js"></script>
+               
+        <!-- counter , waypoint -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+        <script src="./assets/js/jquery.counterup.min.js"></script>
+
+        <!-- contact js -->
+        <script src="./assets/js/contact.js"></script>
+        <script src="./assets/js/jquery.form.js"></script>
+        <script src="./assets/js/jquery.validate.min.js"></script>
+        <script src="./assets/js/mail-script.js"></script>
+        <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+        
+		<!-- Jquery Plugins, main Jquery -->	
+        <script src="./assets/js/plugins.js"></script>
+        <script src="./assets/js/main.js"></script>
+        
+    </body>
+</html>
