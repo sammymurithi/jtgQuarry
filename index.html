@@ -3,11 +3,20 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>JTG Aggregates Quarry - Quality Materials in Thika</title>
-        <meta name="description" content="Leading quarry in Thika providing high-quality ballast, sand, gravel and construction aggregates. Fast delivery, competitive pricing, trusted by construction companies across Kenya.">
+        <title>JTG Enterprises Limited - Ballast Quarry in Kilimambogo, Thika</title>
+        <meta name="description" content="JTG Enterprises Limited supplies premium ballast and aggregates from our Kilimambogo quarry, 18 km from Thika town. Contact us for quality quarry products.">
+        <meta name="keywords" content="ballast quarry, Kilimambogo quarry, Thika quarry, JTG Enterprises, aggregates, stone crushing">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="manifest" href="site.webmanifest">
 		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+        <!-- Google Analytics Placeholder -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR-GA-ID"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'YOUR-GA-ID');
+        </script>
 
 		<!-- CSS here -->
             <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -333,6 +342,1062 @@
                 padding: 0 15px;
             }
         }
+
+        .hero-text {
+          background: rgba(0, 0, 0, 0.6);
+          padding: 20px;
+          border-radius: 8px;
+          color: #fff;
+          max-width: 600px;
+        }
+        .btn, .white-btn, .red-btn2 {
+          background: #0055A4 !important;
+          color: #fff !important;
+          font-weight: bold;
+          border-radius: 6px;
+          border: none;
+        }
+        .btn:hover, .white-btn:hover, .red-btn2:hover {
+          background: #003087 !important;
+        }
+        nav ul {
+          list-style: none;
+          display: flex;
+          gap: 24px;
+          padding: 0;
+        }
+        nav ul li a {
+          color: #003087;
+          font-weight: 600;
+          text-decoration: none;
+        }
+        nav ul li a.active, nav ul li a:hover {
+          color: #0055A4;
+        }
+        #products {
+          padding: 40px 20px;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+        #products h2 {
+          font-size: 2em;
+          color: #003087;
+          margin-bottom: 20px;
+        }
+        #products p, #products ul {
+          font-size: 1.1em;
+          line-height: 1.6;
+        }
+        #products ul {
+          list-style: none;
+          padding: 0;
+        }
+        #products li {
+          margin: 15px 0;
+        }
+        #products li strong {
+          color: #003087;
+        }
+        #products a {
+          color: #0055A4;
+          text-decoration: none;
+          font-weight: bold;
+        }
+        @media (max-width: 768px) {
+          .section, #products { padding: 20px; }
+          #products h2 { font-size: 1.8em; }
+        }
+        
+
+
+
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* --- HERO SECTION (GLASSMORPHISM) --- */
+        .hero-section {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #00235b 0%, #0b1c39 100%);
+            overflow: hidden;
+        }
+        .hero-background {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(135deg, rgba(11,28,57,0.85) 0%, rgba(255,95,19,0.7) 100%);
+            z-index: 1;
+        }
+        .hero-background::before {
+            content: '';
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background-image: url('data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'><defs><pattern id=\'grain\' patternUnits=\'userSpaceOnUse\' width=\'100\' height=\'100\'><circle cx=\'20\' cy=\'20\' r=\'1\' fill=\'rgba(255,255,255,0.08)\'/><circle cx=\'80\' cy=\'40\' r=\'1.5\' fill=\'rgba(255,255,255,0.06)\'/><circle cx=\'40\' cy=\'60\' r=\'1\' fill=\'rgba(255,255,255,0.10)\'/><circle cx=\'70\' cy=\'80\' r=\'1.2\' fill=\'rgba(255,255,255,0.07)\'/><circle cx=\'10\' cy=\'90\' r=\'0.8\' fill=\'rgba(255,255,255,0.09)\'/></pattern></defs><rect width=\'100\' height=\'100\' fill=\'url(%23grain)\'/></svg>');
+            opacity: 0.5;
+            pointer-events: none;
+        }
+        .hero-container {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 900px;
+            padding: 0 20px;
+        }
+        .glass-card {
+            background: rgba(255,255,255,0.10);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border: 1.5px solid rgba(255,255,255,0.18);
+            border-radius: 24px;
+            padding: 48px 32px;
+            box-shadow: 0 16px 48px rgba(0,0,0,0.25), 0 0 0 1px rgba(255,255,255,0.08);
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,95,19,0.13);
+            border: 1px solid rgba(255,95,19,0.22);
+            border-radius: 50px;
+            padding: 10px 22px;
+            margin-bottom: 28px;
+            color: #ff5f13;
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .hero-badge i {
+            font-size: 18px;
+            color: #ff5f13;
+        }
+        .hero-title {
+            color: #fff;
+            font-family: 'Playfair Display', 'Inter', sans-serif;
+            font-size: clamp(2.2rem, 6vw, 3.5rem);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 18px;
+            letter-spacing: 0.5px;
+            text-shadow: 0 4px 24px rgba(11,28,57,0.18);
+        }
+        .hero-subtitle {
+            color: #fff;
+            font-size: 1.15rem;
+            font-weight: 400;
+            line-height: 1.6;
+            margin-bottom: 36px;
+            opacity: 0.95;
+        }
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: linear-gradient(90deg, #ff5f13 0%, #ff7f50 100%);
+            color: #fff;
+            text-decoration: none;
+            padding: 16px 36px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+            box-shadow: 0 8px 24px rgba(255,95,19,0.18), 0 2px 8px rgba(0,0,0,0.18);
+            transition: all 0.2s cubic-bezier(0.4,0,0.2,1);
+            margin-bottom: 32px;
+            border: none;
+        }
+        .hero-cta:hover {
+            background: linear-gradient(90deg, #0b1c39 0%, #ff5f13 100%);
+            color: #fff;
+            transform: translateY(-2px) scale(1.04);
+            box-shadow: 0 16px 32px rgba(255,95,19,0.22), 0 4px 16px rgba(0,0,0,0.22);
+        }
+        .hero-cta i {
+            font-size: 1.2em;
+            transition: transform 0.2s;
+        }
+        .hero-cta:hover i:last-child {
+            transform: translateX(5px);
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+            margin-top: 40px;
+        }
+        .feature-card {
+            background: rgba(255,255,255,0.10);
+            border: 1px solid rgba(255,255,255,0.13);
+            border-radius: 16px;
+            padding: 22px 16px 18px 16px;
+            text-align: center;
+            transition: all 0.2s;
+            box-shadow: 0 4px 16px rgba(11,28,57,0.08);
+        }
+        .feature-card:nth-child(odd) {
+            background: linear-gradient(135deg, rgba(255,95,19,0.13) 0%, rgba(255,255,255,0.10) 100%);
+        }
+        .feature-card:nth-child(even) {
+            background: linear-gradient(135deg, rgba(0,35,91,0.13) 0%, rgba(255,255,255,0.10) 100%);
+        }
+        .feature-card:hover {
+            background: rgba(255,255,255,0.16);
+            transform: translateY(-4px) scale(1.03);
+            box-shadow: 0 8px 32px rgba(255,95,19,0.13);
+        }
+        .feature-icon {
+            width: 54px; height: 54px;
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 12px;
+            font-size: 1.7em;
+            color: #fff;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #ff5f13 0%, #0b1c39 100%);
+            box-shadow: 0 4px 12px rgba(255,95,19,0.13);
+        }
+        .feature-card:nth-child(even) .feature-icon {
+            background: linear-gradient(135deg, #0b1c39 0%, #ff5f13 100%);
+        }
+        .feature-title {
+            color: #0b1c39;
+            font-size: 1.08rem;
+            font-weight: 700;
+            margin-bottom: 6px;
+            letter-spacing: 0.2px;
+        }
+        .feature-desc {
+            color: #222;
+            font-size: 0.97rem;
+            opacity: 0.8;
+        }
+        .floating-elements {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1;
+        }
+        .floating-element {
+            position: absolute;
+            background: rgba(255,255,255,0.10);
+            border-radius: 50%;
+            animation: float 7s ease-in-out infinite;
+        }
+        .floating-element:nth-child(1) {
+            width: 70px; height: 70px; top: 18%; left: 8%; animation-delay: 0s;
+        }
+        .floating-element:nth-child(2) {
+            width: 50px; height: 50px; top: 65%; right: 12%; animation-delay: 2s;
+        }
+        .floating-element:nth-child(3) {
+            width: 90px; height: 90px; bottom: 18%; left: 18%; animation-delay: 4s;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.5; }
+            50% { transform: translateY(-18px) rotate(180deg); opacity: 0.8; }
+        }
+        @media (max-width: 900px) {
+            .glass-card { padding: 32px 10px; }
+            .hero-title { font-size: 2rem; }
+            .features-grid { grid-template-columns: 1fr; gap: 12px; }
+        }
+        @media (max-width: 600px) {
+            .hero-section { min-height: 80vh; }
+            .glass-card { padding: 18px 2vw; border-radius: 14px; }
+            .hero-title { font-size: 1.3rem; }
+            .hero-badge { font-size: 13px; padding: 7px 12px; }
+            .features-grid { margin-top: 24px; }
+            .feature-card { padding: 14px 6px; }
+        }
+        /* --- END HERO SECTION --- */
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .glass-card {
+                padding: 40px 24px;
+                margin: 20px;
+            }
+            
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8fafc;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #06b6d4 100%);
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="rgba(255,255,255,0.1)" points="0,0 1000,300 1000,1000 0,700"/></svg>');
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin-top: 40px;
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            display: block;
+            color: #fbbf24;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Products Section */
+        .products-section {
+            padding: 100px 0 90px 0;
+            background: linear-gradient(135deg, #f8fafc 60%, #e2e8f0 100%);
+            position: relative;
+            z-index: 1;
+        }
+        .products-section::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 1000 1000\'><circle cx=\'800\' cy=\'200\' r=\'180\' fill=\'%2306b6d4\' opacity=\'0.08\'/><circle cx=\'200\' cy=\'800\' r=\'140\' fill=\'%23ff5f13\' opacity=\'0.07\'/></svg>');
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.5;
+            z-index: 0;
+            pointer-events: none;
+        }
+        .products-section .container {
+            position: relative;
+            z-index: 2;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: #1e3a8a;
+            margin-bottom: 18px;
+            letter-spacing: 0.5px;
+        }
+        .section-description {
+            font-size: 1.18rem;
+            color: #64748b;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 38px;
+            margin-bottom: 40px;
+        }
+        .product-card {
+            background: rgba(255,255,255,0.92);
+            border-radius: 22px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(30,58,138,0.10), 0 1.5px 0 0 #ff5f13;
+            border: 2.5px solid transparent;
+            transition: all 0.35s cubic-bezier(.4,2,.6,1);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-height: 480px;
+        }
+        .product-card:hover {
+            border-color: #06b6d4;
+            box-shadow: 0 16px 48px rgba(6,182,212,0.13), 0 4px 16px rgba(255,95,19,0.10);
+            transform: translateY(-8px) scale(1.025);
+        }
+        .product-image {
+            height: 210px;
+            background: linear-gradient(135deg, #1e3a8a 0%, #06b6d4 100%);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-bottom: 2px solid #ff5f13;
+            transition: filter 0.3s;
+        }
+        .product-card:hover .product-image img {
+            filter: brightness(0.92) saturate(1.2) blur(1px);
+        }
+        .product-content {
+            flex: 1;
+            padding: 32px 28px 28px 28px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        .product-title {
+            font-size: 1.45rem;
+            font-weight: 700;
+            color: #1e3a8a;
+            margin-bottom: 10px;
+            letter-spacing: 0.2px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .product-description {
+            color: #475569;
+            line-height: 1.6;
+            margin-bottom: 16px;
+            font-size: 1.05rem;
+        }
+        .product-features {
+            list-style: none;
+            margin-bottom: 18px;
+            padding: 0;
+        }
+        .product-features li {
+            padding: 5px 0 5px 0;
+            color: #0b1c39;
+            display: flex;
+            align-items: center;
+            font-size: 1.01rem;
+        }
+        .product-features li::before {
+            content: '\f058';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: #ff5f13;
+            margin-right: 10px;
+            font-size: 1.1rem;
+        }
+        .product-cta {
+            background: linear-gradient(90deg, #ff5f13 0%, #fbbf24 100%);
+            color: #fff;
+            border: none;
+            padding: 13px 32px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.05rem;
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(.4,2,.6,1);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 4px 16px rgba(255,95,19,0.10);
+            margin-top: auto;
+        }
+        .product-cta:hover {
+            background: linear-gradient(90deg, #1e3a8a 0%, #06b6d4 100%);
+            color: #fff;
+            transform: translateY(-2px) scale(1.04);
+            box-shadow: 0 10px 24px rgba(6,182,212,0.13);
+        }
+        @media (max-width: 900px) {
+            .products-section { padding: 60px 0 50px 0; }
+            .products-grid { gap: 22px; }
+            .product-card { min-height: 420px; }
+        }
+        @media (max-width: 600px) {
+            .products-section { padding: 32px 0 20px 0; }
+            .section-title { font-size: 1.5rem; }
+            .products-grid { grid-template-columns: 1fr; gap: 12px; }
+            .product-card { min-height: 340px; }
+            .product-content { padding: 18px 8px 18px 8px; }
+        }
+        /* --- END ENHANCED PRODUCTS SECTION --- */
+
+        /* Services Section */
+        .services-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #3b82f6, #06b6d4);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .service-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #1e3a8a;
+            margin-bottom: 15px;
+        }
+
+        .service-description {
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 80px 0;
+            background: #1e3a8a;
+            color: white;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .contact-info h3 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        .contact-info p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .contact-details {
+            space-y: 15px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .contact-item i {
+            font-size: 1.2rem;
+            margin-right: 15px;
+            color: #fbbf24;
+            width: 20px;
+        }
+
+        .contact-form {
+            background: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            background: rgba(255,255,255,0.9);
+            color: #333;
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background: #fbbf24;
+            color: #1e3a8a;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(251,191,36,0.3);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-stats {
+                flex-direction: column;
+                gap: 30px;
+            }
+            
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
+            }
+        }
+
+
+
+
+        @import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+/* This pen */
+body {
+  font-family: "Baloo 2", cursive;
+  font-size: 16px;
+  color: #ffffff;
+  text-rendering: optimizeLegibility;
+  font-weight: initial;
+}
+
+.dark {
+  background: #110f16;
+}
+
+.light {
+  background: #f3f5f7;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+#pageHeaderTitle {
+  margin: 2rem 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+/* Cards */
+.postcard {
+  flex-wrap: wrap;
+  display: flex;
+  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+  border-radius: 10px;
+  margin: 0 0 2rem 0;
+  overflow: hidden;
+  position: relative;
+  color: #ffffff;
+}
+.postcard.dark {
+  background-color: #18151f;
+}
+.postcard.light {
+  background-color: #e1e5ea;
+}
+.postcard .t-dark {
+  color: #18151f;
+}
+.postcard a {
+  color: inherit;
+}
+.postcard h1,
+.postcard .h1 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.postcard .small {
+  font-size: 80%;
+}
+.postcard .postcard__title {
+  font-size: 1.75rem;
+}
+.postcard .postcard__img {
+  max-height: 180px;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.postcard .postcard__img_link {
+  display: contents;
+}
+.postcard .postcard__bar {
+  width: 50px;
+  height: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #424242;
+  transition: width 0.2s ease;
+}
+.postcard .postcard__text {
+  padding: 1.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.postcard .postcard__preview-txt {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: justify;
+  height: 100%;
+}
+.postcard .postcard__tagbox {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 14px;
+  margin: 20px 0 0 0;
+  padding: 0;
+  justify-content: center;
+}
+.postcard .postcard__tagbox .tag__item {
+  display: inline-block;
+  background: rgba(83, 83, 83, 0.4);
+  border-radius: 3px;
+  padding: 2.5px 10px;
+  margin: 0 5px 5px 0;
+  cursor: default;
+  user-select: none;
+  transition: background-color 0.3s;
+}
+.postcard .postcard__tagbox .tag__item:hover {
+  background: rgba(83, 83, 83, 0.8);
+}
+.postcard:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(-70deg, #424242, transparent 50%);
+  opacity: 1;
+  border-radius: 10px;
+}
+.postcard:hover .postcard__bar {
+  width: 100px;
+}
+
+@media screen and (min-width: 769px) {
+  .postcard {
+    flex-wrap: inherit;
+  }
+  .postcard .postcard__title {
+    font-size: 2rem;
+  }
+  .postcard .postcard__tagbox {
+    justify-content: start;
+  }
+  .postcard .postcard__img {
+    max-width: 300px;
+    max-height: 100%;
+    transition: transform 0.3s ease;
+  }
+  .postcard .postcard__text {
+    padding: 3rem;
+    width: 100%;
+  }
+  .postcard .media.postcard__text:before {
+    content: "";
+    position: absolute;
+    display: block;
+    background: #18151f;
+    top: -20%;
+    height: 130%;
+    width: 55px;
+  }
+  .postcard:hover .postcard__img {
+    transform: scale(1.1);
+  }
+  .postcard:nth-child(2n+1) {
+    flex-direction: row;
+  }
+  .postcard:nth-child(2n+0) {
+    flex-direction: row-reverse;
+  }
+  .postcard:nth-child(2n+1) .postcard__text::before {
+    left: -12px !important;
+    transform: rotate(4deg);
+  }
+  .postcard:nth-child(2n+0) .postcard__text::before {
+    right: -12px !important;
+    transform: rotate(-4deg);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .postcard__text {
+    padding: 2rem 3.5rem;
+  }
+
+  .postcard__text:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -20%;
+    height: 130%;
+    width: 55px;
+  }
+
+  .postcard.dark .postcard__text:before {
+    background: #18151f;
+  }
+
+  .postcard.light .postcard__text:before {
+    background: #e1e5ea;
+  }
+}
+/* COLORS */
+.postcard .postcard__tagbox .green.play:hover {
+  background: #79dd09;
+  color: black;
+}
+
+.green .postcard__title:hover {
+  color: #79dd09;
+}
+
+.green .postcard__bar {
+  background-color: #79dd09;
+}
+
+.green::before {
+  background-image: linear-gradient(-30deg, rgba(121, 221, 9, 0.1), transparent 50%);
+}
+
+.green:nth-child(2n)::before {
+  background-image: linear-gradient(30deg, rgba(121, 221, 9, 0.1), transparent 50%);
+}
+
+.postcard .postcard__tagbox .blue.play:hover {
+  background: #0076bd;
+}
+
+.blue .postcard__title:hover {
+  color: #0076bd;
+}
+
+.blue .postcard__bar {
+  background-color: #0076bd;
+}
+
+.blue::before {
+  background-image: linear-gradient(-30deg, rgba(0, 118, 189, 0.1), transparent 50%);
+}
+
+.blue:nth-child(2n)::before {
+  background-image: linear-gradient(30deg, rgba(0, 118, 189, 0.1), transparent 50%);
+}
+
+.postcard .postcard__tagbox .red.play:hover {
+  background: #bd150b;
+}
+
+.red .postcard__title:hover {
+  color: #bd150b;
+}
+
+.red .postcard__bar {
+  background-color: #bd150b;
+}
+
+.red::before {
+  background-image: linear-gradient(-30deg, rgba(189, 21, 11, 0.1), transparent 50%);
+}
+
+.red:nth-child(2n)::before {
+  background-image: linear-gradient(30deg, rgba(189, 21, 11, 0.1), transparent 50%);
+}
+
+.postcard .postcard__tagbox .yellow.play:hover {
+  background: #bdbb49;
+  color: black;
+}
+
+.yellow .postcard__title:hover {
+  color: #bdbb49;
+}
+
+.yellow .postcard__bar {
+  background-color: #bdbb49;
+}
+
+.yellow::before {
+  background-image: linear-gradient(-30deg, rgba(189, 187, 73, 0.1), transparent 50%);
+}
+
+.yellow:nth-child(2n)::before {
+  background-image: linear-gradient(30deg, rgba(189, 187, 73, 0.1), transparent 50%);
+}
+
+@media screen and (min-width: 769px) {
+  .green::before {
+    background-image: linear-gradient(-80deg, rgba(121, 221, 9, 0.1), transparent 50%);
+  }
+
+  .green:nth-child(2n)::before {
+    background-image: linear-gradient(80deg, rgba(121, 221, 9, 0.1), transparent 50%);
+  }
+
+  .blue::before {
+    background-image: linear-gradient(-80deg, rgba(0, 118, 189, 0.1), transparent 50%);
+  }
+
+  .blue:nth-child(2n)::before {
+    background-image: linear-gradient(80deg, rgba(0, 118, 189, 0.1), transparent 50%);
+  }
+
+  .red::before {
+    background-image: linear-gradient(-80deg, rgba(189, 21, 11, 0.1), transparent 50%);
+  }
+
+  .red:nth-child(2n)::before {
+    background-image: linear-gradient(80deg, rgba(189, 21, 11, 0.1), transparent 50%);
+  }
+
+  .yellow::before {
+    background-image: linear-gradient(-80deg, rgba(189, 187, 73, 0.1), transparent 50%);
+  }
+
+  .yellow:nth-child(2n)::before {
+    background-image: linear-gradient(80deg, rgba(189, 187, 73, 0.1), transparent 50%);
+  }
+}
     </style>
    </head>
 
@@ -429,143 +1494,314 @@
     </header>
     <main>
 
-        <!-- slider Area Start-->
-        <div class="slider-area ">
-            <div class="slider-active">
-                <div class="single-slider  hero-overly slider-height d-flex align-items-center" data-background="assets/img/jtg/img11.jpg">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-11">
-                                <div class="hero__caption">
-                                    <div class="hero-text1">
-                                        <span data-animation="fadeInUp" data-delay=".3s">Quality Construction Aggregates</span>
-                                    </div>
-                                    <h1 data-animation="fadeInUp" class="mb-3" data-delay=".5s">Your Aggregate</h1>
-                                    <div class="stock-text" data-animation="fadeInUp" data-delay=".8s">
-                                        <h2>Supplier</h2>
-                                        <h2>Supplier</h2>
-                                    </div>
-                                    <div class="hero-text2 mt-110" data-animation="fadeInUp" data-delay=".9s">
-                                       <span><a href="services.html">Our Products</a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="single-slider  hero-overly slider-height d-flex align-items-center" data-background="assets/img/jtg/img12.jpg">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-11">
-                                <div class="hero__caption">
-                                    <div class="hero-text1">
-                                        <span data-animation="fadeInUp" data-delay=".3s">Reliable Supply & Fast Delivery</span>
-                                    </div>
-                                    <h1 data-animation="fadeInUp" data-delay=".5s">Trust In</h1>
-                                    <div class="stock-text" data-animation="fadeInUp" data-delay=".8s">
-                                        <h2>Quality</h2>
-                                        <h2>Quality</h2>
-                                    </div>
-                                    <div class="hero-text2 mt-110" data-animation="fadeInUp" data-delay=".9s">
-                                        <span><a href="contact.html">Contact Us</a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- Hero Section Start-->
+        <section class="hero-section">
+            <div class="hero-background"></div>
+            
+            <div class="floating-elements">
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
             </div>
-        </div>
-        <!-- slider Area End-->
-        <!-- Services Area Start -->
-        <div class="services-area1 section-padding30">
-            <div class="container">
-                <!-- section tittle -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-tittle mb-55">
-                            <div class="front-text">
-                                <h2 class="">Our Products</h2>
+    
+            <div class="hero-container">
+                <div class="glass-card">
+                    <div class="hero-badge">
+                        <i class="fas fa-mountain"></i>
+                        <span>Premium Quality Ballast from Kilimambogo</span>
+                    </div>
+                    
+                    <h1 class="hero-title">JTG Quarry Thika</h1>
+                    
+                    <p class="hero-subtitle">
+                        High-quality ballast and quarry products, 18 km from Thika town. 
+                        Your trusted partner for reliable construction aggregates supply.
+                    </p>
+                    
+                    <a href="#contact" class="hero-cta">
+                        <i class="fas fa-calculator"></i>
+                        <span>Get a Quote</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+    
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-truck"></i>
                             </div>
+                            <div class="feature-title">Fast Delivery</div>
+                            <div class="feature-desc">Reliable supply chain with prompt delivery services and a dedicated logistics fleet</div>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-service-cap mb-30">
-                            <div class="service-img">
-                                <img src="assets/img/jtg/img1.jpg" alt="Ballast">
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-certificate"></i> <!-- Quality icon: certificate -->
                             </div>
-                            <div class="service-cap">
-                                <h4><a href="services_details.html">Quality Ballast</a></h4>
-                                <a href="services_details.html" class="more-btn">Read More <i class="ti-plus"></i></a>
-                            </div>
-                            <div class="service-icon">
-                                <img src="assets/img/icon/services_icon1.png" alt="">
-                            </div>
+                            <div class="feature-title">Premium Quality</div>
+                            <div class="feature-desc">Superior grade aggregates meeting industry standards</div>
                         </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-service-cap mb-30">
-                            <div class="service-img">
-                                <img src="assets/img/jtg/img2.jpg" alt="Sand">
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-map-marker-alt"></i>
                             </div>
-                            <div class="service-cap">
-                                <h4><a href="services_details.html">Construction Sand</a></h4>
-                                <a href="services_details.html" class="more-btn">Read More <i class="ti-plus"></i></a>
-                            </div>
-                            <div class="service-icon">
-                                <img src="assets/img/icon/services_icon1.png" alt="">
-                            </div>
+                            <div class="feature-title">Strategic Location</div>
+                            <div class="feature-desc">Conveniently located 18km from Thika town</div>
                         </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-service-cap mb-30">
-                            <div class="service-img">
-                                <img src="assets/img/jtg/img3.jpg" alt="Gravel">
-                            </div>
-                            <div class="service-cap">
-                                <h4><a href="services_details.html">Gravel & Aggregates</a></h4>
-                                <a href="services_details.html" class="more-btn">Read More <i class="ti-plus"></i></a>
-                            </div>
-                            <div class="service-icon">
-                                <img src="assets/img/icon/services_icon1.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Services Area End -->
-        <!-- About Area Start -->
-        <section class="support-company-area fix pt-10">
-            <div class="support-wrapper align-items-end">
-                <div class="left-content">
-                    <!-- section tittle -->
-                    <div class="section-tittle section-tittle2 mb-55">
-                        <div class="front-text">
-                            <h2 class="">Who we are</h2>
-                        </div>
-                    </div>
-                    <div class="support-caption">
-                        <p class="pera-top">JTG Aggregates Quarry is Thika's leading supplier of high-quality construction materials, serving construction companies, real estate developers, and contractors across Kenya.</p>
-                        <p>With years of experience in the aggregates industry, we provide reliable supply, competitive pricing, and fast delivery of ballast, sand, gravel, and other construction materials. Our commitment to quality and customer satisfaction has made us the trusted partner for major construction projects in Thika and surrounding areas.</p>
-                        <a href="about.html" class="btn red-btn2">read more</a>
-                    </div>
-                </div>
-                <div class="right-content">
-                    <!-- img -->
-                    <div class="right-img">
-                        <img src="assets/img/jtg/img5.jpg" alt="Quarry Operations">
-                    </div>
-                    <div class="support-img-cap text-center">
-                        <span>2014</span>
-                        <p>Since</p>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- Hero Section End-->
+
+<!-- Products Section -->
+
+<section class="products-section">
+	<div class="container py-2">
+		<div class="section-header">
+			<h2 class="section-title">Our Premium Products</h2>
+		</div>
+
+		<article class="postcard light blue">
+			<a class="postcard__img_link" href="#">
+				<img class="postcard__img" src="assets/img/jtg/img13.jpg" alt="Premium Ballast" />
+			</a>
+			<div class="postcard__text t-dark">
+				<h1 class="postcard__title blue"><a href="#">Premium Ballast</a></h1>
+				<div class="postcard__subtitle small">
+					<time datetime="2025-06-20 12:00:00">
+						<i class="fas fa-calendar-alt mr-2"></i>Available Year Round
+					</time>
+				</div>
+				<div class="postcard__bar"></div>
+				<div class="postcard__preview-txt">High-grade ballast in 3/4" and 1/2" sizes, rigorously tested for concrete, road bases, and railway construction. Superior strength & durability with consistent grading & sizing for railway-grade quality applications.</div>
+				<ul class="postcard__tagbox">
+					<li class="tag__item"><i class="fas fa-tag mr-2"></i>Construction</li>
+					<li class="tag__item"><i class="fas fa-ruler mr-2"></i>3/4" & 1/2"</li>
+					<li class="tag__item play blue">
+						<a href="#"><i class="fas fa-phone mr-2"></i>Request Quote</a>
+					</li>
+				</ul>
+			</div>
+		</article>
+
+		<article class="postcard light red">
+			<a class="postcard__img_link" href="#">
+				<img class="postcard__img" src="assets/img/jtg/img2.jpg" alt="Construction Aggregates" />	
+			</a>
+			<div class="postcard__text t-dark">
+				<h1 class="postcard__title red"><a href="#">Construction Aggregates</a></h1>
+				<div class="postcard__subtitle small">
+					<time datetime="2025-06-20 12:00:00">
+						<i class="fas fa-calendar-alt mr-2"></i>Available Year Round
+					</time>
+				</div>
+				<div class="postcard__bar"></div>
+				<div class="postcard__preview-txt">Versatile aggregates from fine sand to coarse gravel in multiple sizes: 1/4", 1/2", and 1" specifications. Perfect for foundations & drainage, concrete production ready with consistent quality assurance.</div>
+				<ul class="postcard__tagbox">
+					<li class="tag__item"><i class="fas fa-tag mr-2"></i>Aggregates</li>
+					<li class="tag__item"><i class="fas fa-ruler mr-2"></i>Multiple Sizes</li>
+					<li class="tag__item play red">
+						<a href="#"><i class="fas fa-phone mr-2"></i>Request Quote</a>
+					</li>
+				</ul>
+			</div>
+		</article>
+
+		<article class="postcard light green">
+			<a class="postcard__img_link" href="#">
+				<img class="postcard__img" src="assets/img/jtg/img10.jpg" alt="Crushed Stone" />
+			</a>
+			<div class="postcard__text t-dark">
+				<h1 class="postcard__title green"><a href="#">Crushed Stone</a></h1>
+				<div class="postcard__subtitle small">
+					<time datetime="2025-06-20 12:00:00">
+						<i class="fas fa-calendar-alt mr-2"></i>Available Year Round
+					</time>
+				</div>
+				<div class="postcard__bar"></div>
+				<div class="postcard__preview-txt">Precision-produced crushed stone for landscaping, driveways, and erosion control with uniform quality. Uniform size & texture with excellent drainage properties for landscaping solutions.</div>
+				<ul class="postcard__tagbox">
+					<li class="tag__item"><i class="fas fa-tag mr-2"></i>Landscaping</li>
+					<li class="tag__item"><i class="fas fa-shield-alt mr-2"></i>Erosion Control</li>
+					<li class="tag__item play green">
+						<a href="#"><i class="fas fa-phone mr-2"></i>Request Quote</a>
+					</li>
+				</ul>
+			</div>
+		</article>
+
+		<article class="postcard light yellow">
+			<a class="postcard__img_link" href="#">
+				<img class="postcard__img" src="assets/img/jtg/img7.jpg" alt="Stone Dust" />
+			</a>
+			<div class="postcard__text t-dark">
+				<h1 class="postcard__title yellow"><a href="#">Stone Dust</a></h1>
+				<div class="postcard__subtitle small">
+					<time datetime="2025-06-20 12:00:00">
+						<i class="fas fa-calendar-alt mr-2"></i>Available Year Round
+					</time>
+				</div>
+				<div class="postcard__bar"></div>
+				<div class="postcard__preview-txt">Fine stone dust perfect for paving, block manufacturing, and finishing work requiring smooth, stable bases. Ultra-fine consistency with excellent compaction properties for professional results.</div>
+				<ul class="postcard__tagbox">
+					<li class="tag__item"><i class="fas fa-tag mr-2"></i>Fine Material</li>
+					<li class="tag__item"><i class="fas fa-compress mr-2"></i>Compaction</li>
+					<li class="tag__item play yellow">
+						<a href="#"><i class="fas fa-phone mr-2"></i>Request Quote</a>
+					</li>
+				</ul>
+			</div>
+		</article>
+
+		<article class="postcard light blue">
+			<a class="postcard__img_link" href="#">
+				<img class="postcard__img" src="assets/img/jtg/logistics.jpg" alt="Logistics & Delivery" />
+			</a>
+			<div class="postcard__text t-dark">
+				<h1 class="postcard__title blue"><a href="#">Logistics & Delivery</a></h1>
+				<div class="postcard__subtitle small">
+					<time datetime="2025-06-20 12:00:00">
+						<i class="fas fa-calendar-alt mr-2"></i>Daily Service
+					</time>
+				</div>
+				<div class="postcard__bar"></div>
+				<div class="postcard__preview-txt">Our dedicated fleet ensures prompt delivery across Thika, Nairobi, and surrounding regions with professional logistics. GPS tracking available with flexible scheduling options for your convenience.</div>
+				<ul class="postcard__tagbox">
+					<li class="tag__item"><i class="fas fa-tag mr-2"></i>Delivery</li>
+					<li class="tag__item"><i class="fas fa-truck mr-2"></i>Fleet Service</li>
+					<li class="tag__item play blue">
+						<a href="#"><i class="fas fa-calendar mr-2"></i>Schedule Delivery</a>
+					</li>
+				</ul>
+			</div>
+		</article>
+
+		<article class="postcard light red">
+			<a class="postcard__img_link" href="#">
+				<img class="postcard__img" src="assets/img/jtg/crasher.jpg" alt="Custom Processing" />
+			</a>
+			<div class="postcard__text t-dark">
+				<h1 class="postcard__title red"><a href="#">Custom Processing</a></h1>
+				<div class="postcard__subtitle small">
+					<time datetime="2025-06-20 12:00:00">
+						<i class="fas fa-calendar-alt mr-2"></i>On Demand
+					</time>
+				</div>
+				<div class="postcard__bar"></div>
+				<div class="postcard__preview-txt">Specialized processing services for unique project requirements with custom sizing and blending capabilities. Project-specific solutions with technical consultation for optimal results.</div>
+				<ul class="postcard__tagbox">
+					<li class="tag__item"><i class="fas fa-tag mr-2"></i>Custom</li>
+					<li class="tag__item"><i class="fas fa-cogs mr-2"></i>Processing</li>
+					<li class="tag__item play red">
+						<a href="#"><i class="fas fa-comments mr-2"></i>Discuss Requirements</a>
+					</li>
+				</ul>
+			</div>
+		</article>
+	</div>
+</section>
+
+<!-- End of Products Section -->
+
+        <!-- About Area Start -->
+       <!-- About Area Start -->
+<section class="about-section support-company-area">
+	<div class="support-wrapper align-items-end">
+		<div class="left-content">
+			<div class="section-tittle section-tittle2 mb-55">
+				<div class="front-text">
+					<h2 class="section-title">Who we are</h2>
+				</div>
+			</div>
+			<div class="support-caption">
+				<p class="pera-top">JTG Aggregates Quarry is Thika's leading supplier of high-quality construction materials, serving construction companies, real estate developers, and contractors across Kenya.</p>
+				<p>With years of experience in the aggregates industry, we provide reliable supply, competitive pricing, and fast delivery of ballast, sand, gravel, and other construction materials. Our commitment to quality and customer satisfaction has made us the trusted partner for major construction projects in Thika and surrounding areas.</p>
+				<a href="about.html" class="btn red-btn2">Read More</a>
+			</div>
+		</div>
+		<div class="right-content">
+			<div class="right-img">
+				<img src="assets/img/jtg/img5.jpg" alt="Quarry Operations">
+			</div>
+			<div class="support-img-cap text-center">
+				<span>2014</span>
+				<p>Since</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Next Section Example -->
+<section class="next-section-bg">
+	<!-- ... next section content ... -->
+</section>
+
+<!-- About Area End -->
         <!-- About Area End -->
+
+<!-- Services Section -->
+<section class="services-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Why Choose JTG Quarry?</h2>
+            <p class="section-description">Unmatched expertise, reliability, and quality that sets us apart in Kenya's construction materials industry.</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3 class="service-title">Strategic Location</h3>
+                <p class="service-description">Perfectly positioned 18km from Thika town, providing easy access to major construction hubs across Central Kenya.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-industry"></i>
+                </div>
+                <h3 class="service-title">High-Capacity Production</h3>
+                <p class="service-description">State-of-the-art quarry operations producing up to 400 tons per hour to meet large-scale project demands.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="service-title">Quality Assurance</h3>
+                <p class="service-description">Rigorous testing protocols ensure every product meets international standards for strength and durability.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-truck"></i>
+                </div>
+                <h3 class="service-title">Reliable Logistics</h3>
+                <p class="service-description">Professional fleet and logistics network ensuring prompt delivery to Thika, Nairobi, and surrounding regions.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3 class="service-title">Expert Consultation</h3>
+                <p class="service-description">Our technical team provides professional guidance to help you select the right materials for your specific project needs.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3 class="service-title">24/7 Operations</h3>
+                <p class="service-description">Round-the-clock production and emergency delivery services to keep your projects on schedule.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
         <!-- Project Area Start -->
         <section class="project-area  section-padding30">
             <div class="container">
@@ -978,6 +2214,9 @@
             </div>
         </section>
         <!-- Project Area End -->
+
+
+        
         <!-- contact with us Start -->
         <section class="contact-with-area" data-background="assets/img/gallery/section-bg2.jpg">
             <div class="container">
@@ -1150,7 +2389,7 @@
                                         <path fill-rule="evenodd"  stroke-width="1px" stroke="rgb(255, 95, 19)" fill-opacity="0" fill="rgb(0, 0, 0)"
                                         d="M82.623,59.861 L48.661,59.861 L48.661,25.988 L59.982,3.406 L76.963,3.406 L65.642,25.988 L82.623,25.988 L82.623,59.861 ZM3.377,25.988 L14.698,3.406 L31.679,3.406 L20.358,25.988 L37.340,25.988 L37.340,59.861 L3.377,59.861 L3.377,25.988 Z"/>
                                         </svg>
-                                        <p>We've been working with JTG Aggregates Quarry for our residential development projects. Their competitive pricing and quality materials have helped us deliver excellent results to our clients. The team is professional and responsive to our needs.</p>
+                                        <p>We've been working with JTG Enterprises for our residential development projects. Their competitive pricing and quality materials have helped us deliver excellent results to our clients. The team is professional and responsive to our needs.</p>
                                     </div>
                                     <!-- founder -->
                                     <div class="testimonial-founder d-flex align-items-center">
