@@ -30,6 +30,9 @@
             <link rel="stylesheet" href="assets/css/nice-select.css">
             <link rel="stylesheet" href="assets/css/style.css">
 
+            <!-- Add FontAwesome CDN for full icon support -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
                 <style>
         
         * {
@@ -456,8 +459,8 @@
         }
         .glass-card {
             background: rgba(255,255,255,0.10);
-            backdrop-filter: blur(18px);
-            -webkit-backdrop-filter: blur(18px);
+            backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(2px);
             border: 1.5px solid rgba(255,255,255,0.18);
             border-radius: 24px;
             padding: 48px 32px;
@@ -1398,6 +1401,335 @@ a:hover {
     background-image: linear-gradient(80deg, rgba(189, 187, 73, 0.1), transparent 50%);
   }
 }
+
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .hero-section {
+            position: relative;
+            height: 100vh;
+            min-height: 600px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Carousel Background */
+        .carousel-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .carousel-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+        }
+
+        .carousel-slide.active {
+            opacity: 1;
+        }
+
+        .carousel-slide::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.6) 100%);
+            z-index: 1;
+        }
+
+        /* Hero Content */
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            color: white;
+            max-width: 1200px;
+            width: 100%;
+            padding: 0 20px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 50px;
+            padding: 12px 24px;
+            margin-bottom: 24px;
+            font-size: 14px;
+            font-weight: 500;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .hero-badge i {
+            color: #ff6b35;
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 800;
+            margin-bottom: 24px;
+            line-height: 1.1;
+            background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+            line-height: 1.6;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.95;
+        }
+
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+            color: white;
+            text-decoration: none;
+            padding: 18px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 32px rgba(255,107,53,0.3);
+            margin-bottom: 48px;
+        }
+
+        .hero-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(255,107,53,0.4);
+        }
+
+        .hero-cta .fa-arrow-right {
+            transition: transform 0.3s ease;
+        }
+
+        .hero-cta:hover .fa-arrow-right {
+            transform: translateX(4px);
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 16px;
+            padding: 24px;
+            text-align: left;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            background: rgba(255,255,255,0.18);
+            transform: translateY(-4px);
+        }
+
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+        }
+
+        .feature-icon i {
+            font-size: 20px;
+            color: white;
+        }
+
+        .feature-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: white;
+        }
+
+        .feature-desc {
+            font-size: 14px;
+            line-height: 1.5;
+            color: rgba(255,255,255,0.85);
+        }
+
+        /* Carousel Navigation */
+        .carousel-nav {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 12px;
+            z-index: 15;
+        }
+
+        .nav-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.4);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .nav-dot.active {
+            background: #ff6b35;
+            transform: scale(1.2);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-section {
+                min-height: 100vh;
+                padding: 20px 0;
+            }
+
+            .hero-content {
+                padding: 0 16px;
+            }
+
+            .hero-badge {
+                font-size: 12px;
+                padding: 10px 20px;
+                margin-bottom: 20px;
+            }
+
+            .hero-title {
+                margin-bottom: 20px;
+            }
+
+            .hero-subtitle {
+                margin-bottom: 32px;
+            }
+
+            .hero-cta {
+                padding: 16px 28px;
+                font-size: 15px;
+                margin-bottom: 40px;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .feature-card {
+                padding: 20px;
+            }
+
+            .carousel-nav {
+                bottom: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content {
+                padding: 0 12px;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .feature-card {
+                padding: 16px;
+            }
+
+            .feature-icon {
+                width: 40px;
+                height: 40px;
+            }
+
+            .feature-icon i {
+                font-size: 18px;
+            }
+        }
+
+        /* Animation for floating elements */
+        .floating-elements {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 5;
+            pointer-events: none;
+        }
+
+        .floating-element {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: rgba(255,255,255,0.6);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .floating-element:nth-child(1) {
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .floating-element:nth-child(2) {
+            top: 60%;
+            right: 15%;
+            animation-delay: 2s;
+        }
+
+        .floating-element:nth-child(3) {
+            bottom: 30%;
+            left: 20%;
+            animation-delay: 4s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            33% { transform: translateY(-20px) rotate(120deg); }
+            66% { transform: translateY(10px) rotate(240deg); }
+        }
     </style>
    </head>
 
@@ -1495,63 +1827,77 @@ a:hover {
     <main>
 
         <!-- Hero Section Start-->
-        <section class="hero-section">
-            <div class="hero-background"></div>
-            
-            <div class="floating-elements">
-                <div class="floating-element"></div>
-                <div class="floating-element"></div>
-                <div class="floating-element"></div>
+    <section class="hero-section">
+        <!-- Carousel Container -->
+        <div class="carousel-container">
+            <div class="carousel-slide active" style="background-image: url('assets/img/jtg/img11.jpg');"></div>
+            <div class="carousel-slide" style="background-image: url('assets/img/jtg/img7.jpg');"></div>
+            <div class="carousel-slide" style="background-image: url('assets/img/jtg/crasher.jpg');"></div>
+            <div class="carousel-slide" style="background-image: url('assets/img/jtg/logistics.jpg');"></div>
+        </div>
+<!-- 
+        Floating Elements
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div> -->
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-mountain"></i>
+                <span>Premium Quality Ballast from Kilimambogo</span>
             </div>
-    
-            <div class="hero-container">
-                <div class="glass-card">
-                    <div class="hero-badge">
-                        <i class="fas fa-mountain"></i>
-                        <span>Premium Quality Ballast from Kilimambogo</span>
+            
+            <h1 class="hero-title">JTG Quarry Thika</h1>
+            
+            <p class="hero-subtitle">
+                Kenya's premier source for high-quality ballast and construction aggregates. 
+                Strategically located 18km from Thika town, delivering excellence to your projects.
+            </p>
+            
+            <a href="#contact" class="hero-cta">
+                <i class="fas fa-calculator"></i>
+                <span>Get Your Quote Today</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
                     </div>
-                    
-                    <h1 class="hero-title">JTG Quarry Thika</h1>
-                    
-                    <p class="hero-subtitle">
-                        High-quality ballast and quarry products, 18 km from Thika town. 
-                        Your trusted partner for reliable construction aggregates supply.
-                    </p>
-                    
-                    <a href="#contact" class="hero-cta">
-                        <i class="fas fa-calculator"></i>
-                        <span>Get a Quote</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-    
-                    <div class="features-grid">
-                        <div class="feature-card">
-                            <div class="feature-icon">
-                                <i class="fas fa-truck"></i>
-                            </div>
-                            <div class="feature-title">Fast Delivery</div>
-                            <div class="feature-desc">Reliable supply chain with prompt delivery services and a dedicated logistics fleet</div>
-                        </div>
-                        
-                        <div class="feature-card">
-                            <div class="feature-icon">
-                                <i class="fas fa-certificate"></i> <!-- Quality icon: certificate -->
-                            </div>
-                            <div class="feature-title">Premium Quality</div>
-                            <div class="feature-desc">Superior grade aggregates meeting industry standards</div>
-                        </div>
-                        
-                        <div class="feature-card">
-                            <div class="feature-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="feature-title">Strategic Location</div>
-                            <div class="feature-desc">Conveniently located 18km from Thika town</div>
-                        </div>
+                    <div class="feature-title">Lightning-Fast Delivery</div>
+                    <div class="feature-desc">Same-day delivery across Thika and surrounding areas with our dedicated fleet</div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
                     </div>
+                    <div class="feature-title">Certified Excellence</div>
+                    <div class="feature-desc">ISO-certified aggregates meeting the highest industry standards and specifications</div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="feature-title">Prime Location</div>
+                    <div class="feature-desc">Strategically positioned for optimal supply chain efficiency and reduced costs</div>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <!-- Carousel Navigation -->
+        <div class="carousel-nav">
+            <div class="nav-dot active" data-slide="0"></div>
+            <div class="nav-dot" data-slide="1"></div>
+            <div class="nav-dot" data-slide="2"></div>
+            <div class="nav-dot" data-slide="3"></div>
+        </div>
+    </section>
         <!-- Hero Section End-->
 
 <!-- Products Section -->
@@ -2596,6 +2942,93 @@ a:hover {
 		<!-- Jquery Plugins, main Jquery -->	
         <script src="./assets/js/plugins.js"></script>
         <script src="./assets/js/main.js"></script>
+
+        <script>
+             class HeroCarousel {
+            constructor() {
+                this.slides = document.querySelectorAll('.carousel-slide');
+                this.navDots = document.querySelectorAll('.nav-dot');
+                this.currentSlide = 0;
+                this.slideInterval = null;
+                
+                this.init();
+            }
+
+            init() {
+                this.addEventListeners();
+                this.startAutoPlay();
+            }
+
+            addEventListeners() {
+                this.navDots.forEach((dot, index) => {
+                    dot.addEventListener('click', () => {
+                        this.goToSlide(index);
+                        this.resetAutoPlay();
+                    });
+                });
+
+                // Pause on hover
+                const heroSection = document.querySelector('.hero-section');
+                heroSection.addEventListener('mouseenter', () => this.pauseAutoPlay());
+                heroSection.addEventListener('mouseleave', () => this.startAutoPlay());
+            }
+
+            goToSlide(slideIndex) {
+                // Remove active class from current slide and nav dot
+                this.slides[this.currentSlide].classList.remove('active');
+                this.navDots[this.currentSlide].classList.remove('active');
+
+                // Update current slide index
+                this.currentSlide = slideIndex;
+
+                // Add active class to new slide and nav dot
+                this.slides[this.currentSlide].classList.add('active');
+                this.navDots[this.currentSlide].classList.add('active');
+            }
+
+            nextSlide() {
+                const nextIndex = (this.currentSlide + 1) % this.slides.length;
+                this.goToSlide(nextIndex);
+            }
+
+            startAutoPlay() {
+                this.slideInterval = setInterval(() => {
+                    this.nextSlide();
+                }, 5000); // Change slide every 5 seconds
+            }
+
+            pauseAutoPlay() {
+                if (this.slideInterval) {
+                    clearInterval(this.slideInterval);
+                    this.slideInterval = null;
+                }
+            }
+
+            resetAutoPlay() {
+                this.pauseAutoPlay();
+                this.startAutoPlay();
+            }
+        }
+
+        // Initialize carousel when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            new HeroCarousel();
+        });
+
+        // Add smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        </script>
         
     </body>
 </html>
